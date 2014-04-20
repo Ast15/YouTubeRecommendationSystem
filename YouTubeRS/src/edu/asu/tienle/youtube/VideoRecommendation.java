@@ -2,6 +2,7 @@ package edu.asu.tienle.youtube;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -53,7 +54,9 @@ public class VideoRecommendation {
 	    final String ACTIVITY_FEED_PREFIX = YOUTUBE_GDATA_SERVER+ "/feeds/api/events";
 
 
-		List<String>friendList=new ArrayList<String>();
+		//List<String>friendList=new ArrayList<String>();
+		List<String>friendList=new LinkedList<String>();
+
 		
 		String feedUrl=null;
 		try{
