@@ -127,9 +127,7 @@ private void populateRecommendedList(){//this method calls HITS algorithm, and s
 		Comparator<Double>comp=new Comparator<Double>(){
 			@Override
 			public int compare(Double o1, Double o2) {
-				if(o1<o2)return -1;//this comparison to make a MIN_heap
-				else if(o1>o2)return 1;
-				return 0;
+				return o1-o2;//MIN Heap
 			}
 		};
 		PriorityQueue<Double> q=new PriorityQueue<Double>(nVideo,comp);//MIN heap to store top nVideo
